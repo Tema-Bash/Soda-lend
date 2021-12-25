@@ -42,7 +42,7 @@
   max-width: 783px;
   margin: 40px 100px 50px 50px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1439px) {
   .header__image {
     max-width: 668px;
     margin: 126px 50px 0 50px;
@@ -103,7 +103,6 @@
 @media screen and (max-width: 767px) {
   .header__logo {
     font-size: 20px;
-    line-height: 30px;
     margin: 20px auto 0 20px;
   }
 }
@@ -112,7 +111,7 @@
   left: 736px;
   top: 601px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1439px) {
   .header__sub-image {
     left: 550px;
     top: 544px;

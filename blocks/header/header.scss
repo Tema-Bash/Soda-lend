@@ -1,18 +1,25 @@
+$font-stack: "Inter", sans-serif;
+$width-tab: 1439px;
+$width-mob: 767px;
+$color-link: #FFDB00;
+$width-320: 320px;
+$width-280: 280px;
+
 .header {
   background: #9960F6;
-  font-family: "Inter", sans-serif;
+  font-family: $font-stack;
 
   &__column {
     width: 100%;
     margin: 0;
     &:last-of-type{
-      @media screen and (max-width: 1439px) {
+      @media screen and (max-width: $width-tab) {
         display: flex;
         justify-content: space-between;
       }
     }
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       flex-direction: column;
     }
   }
@@ -25,25 +32,25 @@
     position: relative;
     background: url("../../images/header-top_circle.svg") no-repeat;
     background-position: 120% -85%;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       max-width: 768px;
       background: none;
       flex-direction: column;
     }
-    @media screen and (max-width: 767px) {
-      max-width: 320px;
+    @media screen and (max-width: $width-mob) {
+      max-width: $width-320;
     }
   }
 
   &__image {
     max-width: 783px;
     margin: 40px 100px 50px 50px;
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: $width-tab) {
       max-width: 668px;
       margin: 126px 50px 0 50px;
     }
-    @media screen and (max-width: 767px) {
-      max-width: 280px;
+    @media screen and (max-width: $width-mob) {
+      max-width: $width-280;
       margin: 50px 20px 0 20px;
     }
   }
@@ -56,7 +63,7 @@
     letter-spacing: 0.3px;
     text-align: center;
     text-decoration: none;
-    background: #FFDB00;
+    background: $color-link;
     padding: 17px 30px;
     transition: 0.1s;
     &:hover {
@@ -66,7 +73,7 @@
       box-sizing: border-box;
       padding: 15px 30px;
     }
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       align-self: center;
       margin-right: 50px;
       margin-bottom: 20px;
@@ -74,7 +81,7 @@
       box-sizing: content-box;
     }
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       align-self: flex-start;
       margin-left: 20px;
       padding: 8px 23px;
@@ -82,7 +89,7 @@
   }
   
   &__logo {
-    color: #FFDB00;
+    color: $color-link;
     text-transform: uppercase;
     margin: 40px auto 0 50px;
     font-size: 30px;
@@ -91,9 +98,8 @@
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       font-size: 20px;
-      line-height: 30px;
       margin: 20px auto 0 20px;
     }
   }
@@ -102,11 +108,11 @@
     position: absolute;
     left: 736px;
     top: 601px;
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: $width-tab) {
       left: 550px;
       top: 544px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       left: 200px;
       top: 264px;
       width: 94px;
@@ -118,13 +124,13 @@
     position: absolute;
     left: calc(50% - 565px/2 + 597.5px);
     top: calc(50% - 565px/2 - 1870px);
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       visibility: visible;
       left: 590px;
       top: 40px;
     }
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       left: 205px;
       top: 19px;
       width: 95px;
@@ -141,17 +147,17 @@
     letter-spacing: 0em;
     text-align: left;
     margin: 388px 50px 183px 0;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       margin: 50px 0 50px 50px;
       font-size: 30px;
       line-height: 38px;
-      max-width: 320px;
+      max-width: $width-320;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       margin: 50px 20px 30px 20px;
       font-size: 20px;
       line-height: 24px;
-      max-width: 280px;
+      max-width: $width-280;
     }
   }
 }

@@ -1,6 +1,10 @@
+$font-stack: "Inter", sans-serif;
+$width-tab: 1439px;
+$width-mob: 767px;
+
 .footer {
   background: #7A54F9;
-  font-family: "Inter", sans-serif;
+  font-family: $font-stack;
   color: #fff;
 
 
@@ -10,13 +14,13 @@
       flex-basis: 48%;
     }
 
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       min-width: 161px;
       &:first-of-type {
         flex-basis: 46%;
       }
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
         max-width: 200px;
     }
   }
@@ -27,7 +31,7 @@
     max-width: 1440px;
     display: flex;
     position: relative;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       flex-direction: column;
       align-items: center;
       padding-bottom: 66px;
@@ -50,11 +54,11 @@
     line-height: 15px;
     letter-spacing: 0.3px;
     text-align: left;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       top: 85%;
       left: 46%;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       top: 662px;
       left: 30px;
     }
@@ -68,7 +72,7 @@
     line-height: 28px;
     letter-spacing: 0.3px;
     text-align: left;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       text-align: center;
     }
   }
@@ -87,7 +91,7 @@
     &:hover {
       opacity: 0.7;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       text-align: center;
     }
   }
@@ -99,11 +103,11 @@
 
   &__logo {
     margin: 100px auto 100px 150px;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       width: 200px;
       margin: 120px auto 150px 50px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       width: 200px;
       margin: 60px auto 8px auto;
     }
@@ -117,11 +121,11 @@
     line-height: 33px;
     letter-spacing: 0em;
     text-align: left;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       margin-top: 123px;
       margin-bottom: 20px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       margin-top: 35px;
       margin-bottom: 20px;
       text-align: center;
