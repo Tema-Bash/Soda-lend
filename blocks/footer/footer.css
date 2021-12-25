@@ -64,20 +64,6 @@
     left: 30px;
   }
 }
-.footer__email {
-  margin-bottom: 3px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.3px;
-  text-align: left;
-}
-@media screen and (max-width: 767px) {
-  .footer__email {
-    text-align: center;
-  }
-}
 .footer__link {
   margin-bottom: 3px;
   font-size: 16px;
