@@ -64,19 +64,6 @@ $width-mob: 767px;
     }
   }
   
-  &__email {
-    margin-bottom: 3px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.3px;
-    text-align: left;
-    @media screen and (max-width: $width-mob) {
-      text-align: center;
-    }
-  }
-  
   &__link {
     margin-bottom: 3px;
     font-size: 16px;
