@@ -1,10 +1,15 @@
+$font-stack: "Inter", sans-serif;
+$width-tab: 1439px;
+$width-mob: 767px;
+$title-color: #1E3264;
+
 .samples {
   background: #CEF564;
-  font-family: "Inter", sans-serif;
-  @media screen and (max-width: 1439px) {
+  font-family: $font-stack;
+  @media screen and (max-width: $width-tab) {
     margin: 0 50px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $width-mob) {
     margin: 0 20px;
   }
 
@@ -14,7 +19,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       flex-direction: column;
     }
   }
@@ -27,12 +32,12 @@
     flex-direction: column;
     box-sizing: border-box;
     min-width: 693px;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       min-width: 600px;
       margin: 100px 34px 34px 34px;
       box-sizing: border-box;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       min-width: 260px;
       margin: 50px 10px 10px 10px;
       padding: 20px;
@@ -45,11 +50,11 @@
     grid-template-rows: 1fr 1fr;
     column-gap: 13px;
     row-gap: 12px;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       display: flex;
       flex-direction: column;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       row-gap: 7px;
     }
   }
@@ -63,7 +68,7 @@
     text-align: left;
     color: #fff;
     margin: 0 0 50px 0;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 39px;
@@ -75,7 +80,7 @@
     border:  none;
     border-bottom: 2px solid #fff;
     width: 310px;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       width: 99%;
     }
     &_type_email {
@@ -84,7 +89,7 @@
       .samples__input {
         width: 630px;
       }
-      @media screen and (max-width: 1439px) {
+      @media screen and (max-width: $width-tab) {
         width: 99%;
         .samples__input {
           width: 100%;
@@ -103,10 +108,10 @@
     text-align: left;
     margin: 0;
     margin-bottom: 20px;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       margin-bottom: 24px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       font-size: 14px;
       line-height: 31px;
       margin-bottom: 10px;
@@ -134,10 +139,10 @@
       box-sizing: border-box;
       padding: 10px 30px;
     }
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       margin: 90px auto 0px 0px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       margin: 60px auto 0px auto;
       width: 100%;
       box-sizing: border-box;
@@ -156,13 +161,13 @@
     line-height: 29px;
     letter-spacing: 0.3px;
     text-align: left;
-    color: #1E3264;
+    color: $title-color;
     opacity: 25%;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       margin: 48px auto 0 60px;
       opacity: 1;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       margin: 20px 20px 0 20px;
       opacity: 1;
       font-size: 14px;
@@ -179,12 +184,12 @@
     line-height: 65px;
     letter-spacing: 0.3px;
     text-align: left;
-    color: #1E3264;
-    @media screen and (max-width: 1439px) {
+    color: $title-color;
+    @media screen and (max-width: $width-tab) {
       margin: 0 auto 0 60px;
       padding-top: 60px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       font-size: 20px;
       line-height: 24px;
       margin: 0 auto 0 20px;

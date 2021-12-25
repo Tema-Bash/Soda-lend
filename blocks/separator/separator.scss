@@ -1,6 +1,6 @@
 .separator {
   width: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: $font-stack;
   background-color: #CEF564;
 
 &__text {
@@ -17,7 +17,7 @@
   text-transform: uppercase;
   color: #016450;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $width-mob) {
       font-size: 20px;
       line-height: 24px;
   }

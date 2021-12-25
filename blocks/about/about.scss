@@ -1,10 +1,15 @@
+$font-stack: "Inter", sans-serif;
+$width-tab: 1439px;
+$width-mob: 767px;
+$color-link: #FFDB00;
+
 .about {
   margin: 0 auto 51px;
   width: 100%;
   max-width: 1440px;
-  font-family: "Inter", sans-serif;
+  font-family: $font-stack;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $width-mob) {
     margin: 0 auto 20px;
   }
 
@@ -19,11 +24,11 @@
     max-width: 1340px;
     background: #9960F6;
     margin: 0 auto;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       margin: 0 50px;
     }
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       margin: 0 20px;
     }
 
@@ -32,7 +37,7 @@
       display: flex;
       justify-content: space-between;
       position: relative;
-      @media screen and (max-width: 1439px) {
+      @media screen and (max-width: $width-tab) {
         flex-direction: column;
         position: relative;
       }
@@ -41,7 +46,7 @@
     &_place_top {
       display: flex;
       justify-content: space-between;
-      @media screen and (max-width: 1439px) {
+      @media screen and (max-width: $width-tab) {
         flex-direction: column;
       }
     }
@@ -51,12 +56,12 @@
     position: absolute;
     top: 320px;
     left: 720px;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       top: 501px;
       left: 476px;
     }
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       display: none;
     }
   }
@@ -69,7 +74,7 @@
     letter-spacing: 0.5px;
     text-align: center;
     margin: 120px auto;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       margin: 50px auto;
       font-size: 20px;
       line-height: 24px;
@@ -78,10 +83,10 @@
 
   &__image {
     margin: 90px 100px 90px 0;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       margin: 60px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       margin: 50px 20px 20px 20px;
     }
   }
@@ -97,7 +102,7 @@
     padding-bottom: 4px;
     margin-bottom: 30px;
     min-width: 255px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       min-width: 240px;
       font-size: 22px;
       line-height: 22px;
@@ -115,21 +120,21 @@
     letter-spacing: 0.3px;
     text-align: center;
     text-decoration: none;
-    background: #FFDB00;
+    background: $color-link;
     padding: 12px 21px;
     margin-bottom: 90px;
     margin-top: 205px;
     margin-left: 100px;
     align-self: flex-start;
     transition: .1s;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       position: absolute;
       margin: 0;
       bottom: 60px;
       left: 60px;
       margin: 0;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       bottom: 20px;
       left: 20px;
     }
@@ -146,10 +151,10 @@
     list-style-type: none;
     margin: 90px 100px 0 auto;
     padding: 0;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       margin: 100px auto 185px 60px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       margin: 60px 20px 115px 20px;
     }
   }
@@ -164,10 +169,10 @@
     padding: 0;
     margin: 30px 0 0 100px;
     max-width: 386px;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       margin: 30px 0 0 60px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       font-size: 14px;
       line-height: 19px;
       margin: 15px 0 0 20px;
@@ -183,10 +188,10 @@
     text-align: left;
     padding: 0;
     margin: 90px 0 0 100px;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       margin: 60px 0 0 60px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       margin: 20px 0 0 20px;
       font-size: 20px;
       line-height: 24px;
@@ -197,11 +202,11 @@
     position: absolute;
     top: 123px;
     left: 622px;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       top: 297px;
       left: 420px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       display: none;
     }
   }

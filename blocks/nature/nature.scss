@@ -1,21 +1,26 @@
+
+$font-stack: "Inter", sans-serif;
+$width-tab: 1439px;
+$width-mob: 767px;
+
 .nature {
   max-width: 1440px;
   margin: 0 auto;
-  font-family: "Inter", sans-serif;
+  font-family: $font-stack;
   display: flex;
   justify-content: space-between;
   position: relative;
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $width-tab) {
       flex-direction: column;
   }
 
   &__image {
     margin: 19px 180px -100px auto;
     z-index: -1;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       margin: 0 auto -90px auto;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       margin: 0 20px -57px 20px;
     }
   }
@@ -24,11 +29,11 @@
     position: absolute;
     top: 7%;
     left: 49%;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       top: 44%;
       left: 7%;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       left: 5%;
       top: 65%;
       width: 123px;
@@ -40,16 +45,16 @@
     font-style: normal;
     font-weight: 500;
     line-height: 67px;
-    letter-spacing: 0.30000001192092896px;
+    letter-spacing: 0.3px;
     text-align: left;
     color: #1E3264;
     max-width: 460px;
     margin: 139px auto 190px 154px;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $width-tab) {
       text-align: center;
       margin: 70px auto 120px auto;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width-mob) {
       margin: 30px auto 50px auto;
       font-size: 20px;
       line-height: 24px;
