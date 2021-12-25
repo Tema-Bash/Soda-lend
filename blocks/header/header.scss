@@ -5,9 +5,11 @@
   &__column {
     width: 100%;
     margin: 0;
-    @media screen and (max-width: 1439px) {
-      display: flex;
-      justify-content: space-between;
+    &:last-of-type{
+      @media screen and (max-width: 1439px) {
+        display: flex;
+        justify-content: space-between;
+      }
     }
     
     @media screen and (max-width: 767px) {
