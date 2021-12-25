@@ -1,6 +1,11 @@
 .header {
-  background: #9960F6;
+  background: url("../../images/header-background-fresh.png") bottom 25px left -45px repeat-x, url("../../images/header-background-botom.png") bottom 0 right repeat-x, #9960F6;
   font-family: "Inter", sans-serif;
+}
+@media screen and (max-width: 1439px) {
+  .header {
+    background: url("../../images/header-background-mobile.png") bottom left repeat-x, #9960F6;
+  }
 }
 .header__column {
   width: 100%;
@@ -21,7 +26,8 @@
   max-width: 1440px;
   width: 100%;
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 0;
+  padding-bottom: 73px;
   position: relative;
   background: url("../../images/header-top_circle.svg") no-repeat;
   background-position: 120% -85%;
@@ -36,6 +42,7 @@
 @media screen and (max-width: 767px) {
   .header__container {
     max-width: 320px;
+    padding-bottom: 66px;
   }
 }
 .header__image {
