@@ -6,8 +6,14 @@ $width-320: 320px;
 $width-280: 280px;
 
 .header {
-  background: #9960F6;
+  background: url("../../images/header-background-fresh.png") bottom 25px left -45px repeat-x,
+              url("../../images/header-background-botom.png") bottom 0 right  repeat-x, 
+            #9960F6;
   font-family: $font-stack;
+  @media screen and (max-width: $width-tab) {
+    background: url("../../images/header-background-mobile.png") bottom left  repeat-x,
+              #9960F6;
+  }
 
   &__column {
     width: 100%;
@@ -28,7 +34,8 @@ $width-280: 280px;
     max-width: 1440px;
     width: 100%;
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto 0;
+    padding-bottom: 73px;
     position: relative;
     background: url("../../images/header-top_circle.svg") no-repeat;
     background-position: 120% -85%;
@@ -39,6 +46,7 @@ $width-280: 280px;
     }
     @media screen and (max-width: $width-mob) {
       max-width: $width-320;
+      padding-bottom: 66px;
     }
   }
 
