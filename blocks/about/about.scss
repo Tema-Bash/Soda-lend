@@ -32,7 +32,7 @@ $color-link: #FFDB00;
       margin: 0 20px;
     }
 
-    &_place_bottom {
+    &_type_compound {
       background: url("../../images/about-circle-top.png") top 125px left 625px no-repeat,
                   url("../../images/about-circle-down.png") top 323px left 724px no-repeat,
                   #8556F8;
@@ -51,7 +51,7 @@ $color-link: #FFDB00;
       }
     }
 
-    &_place_top {
+    &_type_tastes {
       display: flex;
       justify-content: space-between;
       @media screen and (max-width: $width-tab) {

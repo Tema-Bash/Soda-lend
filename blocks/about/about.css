@@ -30,30 +30,30 @@
     margin: 0 20px;
   }
 }
-.about__container_place_bottom {
+.about__container_type_compound {
   background: url("../../images/about-circle-top.png") top 125px left 625px no-repeat, url("../../images/about-circle-down.png") top 323px left 724px no-repeat, #8556F8;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 @media screen and (max-width: 1439px) {
-  .about__container_place_bottom {
+  .about__container_type_compound {
     flex-direction: column;
     position: relative;
     background: url("../../images/about-circle-top.png") top 301px left 424px no-repeat, url("../../images/about-circle-down.png") top 506px left 471px no-repeat, #8556F8;
   }
 }
 @media screen and (max-width: 767px) {
-  .about__container_place_bottom {
+  .about__container_type_compound {
     background: #8556F8;
   }
 }
-.about__container_place_top {
+.about__container_type_tastes {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 1439px) {
-  .about__container_place_top {
+  .about__container_type_tastes {
     flex-direction: column;
   }
 }
