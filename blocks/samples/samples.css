@@ -87,11 +87,24 @@
   border: none;
   border-bottom: 2px solid #fff;
   width: 310px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.3px;
+  text-align: left;
 }
 @media screen and (max-width: 1439px) {
   .samples__input {
     width: 99%;
   }
+}
+.samples__input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fff;
 }
 .samples__input_type_email {
   width: 600px;
@@ -145,12 +158,14 @@
   text-decoration: none;
   margin: 180px auto 0px 0px;
   transition: 0.1s;
+  min-height: 55px;
+  box-sizing: border-box;
+  border: none;
 }
 .samples__link:hover {
   border: 2px solid #e1fd2c;
   cursor: pointer;
   border-radius: 10px;
-  box-sizing: border-box;
   padding: 10px 30px;
 }
 @media screen and (max-width: 1439px) {
@@ -162,7 +177,6 @@
   .samples__link {
     margin: 60px auto 0px auto;
     width: 100%;
-    box-sizing: border-box;
     text-align: center;
     font-size: 16px;
     line-height: 31px;
