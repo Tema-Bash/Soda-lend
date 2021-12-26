@@ -2,7 +2,7 @@ $font-stack: "Inter", sans-serif;
 $width-tab: 1439px;
 $width-mob: 767px;
 $title-color: #1E3264;
-
+$font-color: #fff;
 .samples {
   background: #CEF564;
   font-family: $font-stack;
@@ -66,7 +66,7 @@ $title-color: #1E3264;
     line-height: 40px;
     letter-spacing: 0px;
     text-align: left;
-    color: #fff;
+    color: $font-color;
     margin: 0 0 50px 0;
     @media screen and (max-width: $width-mob) {
       font-size: 20px;
@@ -80,8 +80,21 @@ $title-color: #1E3264;
     border:  none;
     border-bottom: 2px solid #fff;
     width: 310px;
+    color: $font-color;
+    font-family: $font-stack;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.3px;
+    text-align: left;
     @media screen and (max-width: $width-tab) {
       width: 99%;
+    }
+    &:focus{
+      outline: none;
+      border: none;
+      border-bottom: 2px solid #fff;
     }
     &_type_email {
       width: 600px;
@@ -99,7 +112,7 @@ $title-color: #1E3264;
   }
   
   &__input-title {
-    color: #fff;
+    color: $font-color;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -121,7 +134,7 @@ $title-color: #1E3264;
   &__link {
     background-color: #A27BFF;
     padding: 12px 30px;
-    color: #fff;
+    color: $font-color;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -132,11 +145,13 @@ $title-color: #1E3264;
     text-decoration: none;
     margin: 180px auto 0px 0px;
     transition: 0.1s;
+    min-height: 55px;
+    box-sizing: border-box;
+    border: none;
     &:hover {
       border: 2px solid #e1fd2c;
       cursor: pointer;
       border-radius: 10px;
-      box-sizing: border-box;
       padding: 10px 30px;
     }
     @media screen and (max-width: $width-tab) {
@@ -145,7 +160,6 @@ $title-color: #1E3264;
     @media screen and (max-width: $width-mob) {
       margin: 60px auto 0px auto;
       width: 100%;
-      box-sizing: border-box;
       text-align: center;
       font-size: 16px;
       line-height: 31px;
