@@ -1,0 +1,171 @@
+$font-stack: "Inter", sans-serif;
+$width-tab: 1439px;
+$width-mob: 767px;
+$color-link: #FFDB00;
+$width-320: 320px;
+$width-280: 280px;
+
+.header {
+  background: url("../../images/header-background-fresh.png") bottom 25px left -45px repeat-x,
+              url("../../images/header-background-botom.png") bottom 0 right  repeat-x, 
+            #9960F6;
+  font-family: $font-stack;
+  @media screen and (max-width: $width-tab) {
+    background: url("../../images/header-background-mobile.png") bottom left  repeat-x,
+              #9960F6;
+  }
+
+  &__column {
+    width: 100%;
+    margin: 0;
+    &:last-of-type{
+      @media screen and (max-width: $width-tab) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    
+    @media screen and (max-width: $width-mob) {
+      flex-direction: column;
+    }
+  }
+  
+  &__container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto 0;
+    padding-bottom: 73px;
+    position: relative;
+    background: url("../../images/header-top_circle.svg") no-repeat;
+    background-position: 120% -85%;
+    @media screen and (max-width: $width-tab) {
+      max-width: 768px;
+      background: none;
+      flex-direction: column;
+    }
+    @media screen and (max-width: $width-mob) {
+      max-width: $width-320;
+      padding-bottom: 66px;
+    }
+  }
+
+  &__image {
+    max-width: 783px;
+    margin: 40px 100px 50px 50px;
+    @media screen and (max-width: $width-tab) {
+      max-width: 668px;
+      margin: 126px 50px 0 50px;
+    }
+    @media screen and (max-width: $width-mob) {
+      max-width: $width-280;
+      margin: 50px 20px 0 20px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-decoration: none;
+    background: $color-link;
+    padding: 17px 30px;
+    transition: 0.1s;
+    &:hover {
+      border: 2px solid #1e3264;
+      cursor: pointer;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding: 15px 30px;
+    }
+    @media screen and (max-width: $width-tab) {
+      align-self: center;
+      margin-right: 50px;
+      margin-bottom: 20px;
+      padding: 12px 30px;
+      box-sizing: content-box;
+    }
+    
+    @media screen and (max-width: $width-mob) {
+      align-self: flex-start;
+      margin-left: 20px;
+      padding: 8px 23px;
+    }
+  }
+  
+  &__logo {
+    color: $color-link;
+    text-transform: uppercase;
+    margin: 40px auto 0 50px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    @media screen and (max-width: $width-mob) {
+      font-size: 20px;
+      margin: 20px auto 0 20px;
+    }
+  }
+  
+  &__sub-image {
+    position: absolute;
+    left: 736px;
+    top: 601px;
+    @media screen and (max-width: $width-tab) {
+      left: 550px;
+      top: 544px;
+    }
+    @media screen and (max-width: $width-mob) {
+      left: 200px;
+      top: 264px;
+      width: 94px;
+    }
+  }
+  
+  &__sup-image {
+    visibility: hidden;
+    position: absolute;
+    left: calc(50% - 565px/2 + 597.5px);
+    top: calc(50% - 565px/2 - 1870px);
+    @media screen and (max-width: $width-tab) {
+      visibility: visible;
+      left: 590px;
+      top: 40px;
+    }
+    
+    @media screen and (max-width: $width-mob) {
+      left: 205px;
+      top: 19px;
+      width: 95px;
+    }
+  }
+  
+  &__title {
+    color: #fff;
+    width: 80%;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 388px 50px 183px 0;
+    @media screen and (max-width: $width-tab) {
+      margin: 50px 0 50px 50px;
+      font-size: 30px;
+      line-height: 38px;
+      max-width: $width-320;
+    }
+    @media screen and (max-width: $width-mob) {
+      margin: 50px 20px 30px 20px;
+      font-size: 20px;
+      line-height: 24px;
+      max-width: $width-280;
+    }
+  }
+}

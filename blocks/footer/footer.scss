@@ -1,0 +1,109 @@
+$font-stack: "Inter", sans-serif;
+$width-tab: 1439px;
+$width-mob: 767px;
+
+.footer {
+  background: #7A54F9;
+  font-family: $font-stack;
+  color: #fff;
+
+
+  &__columns {
+    display: grid; 
+    margin: 0 auto;
+    padding: 100px 0;
+    width: 100%;
+    max-width: 1440px;
+    grid-template-columns: 1.45fr 0.45fr 1.1fr;
+    grid-template-rows: 2.3fr 0.2fr;
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "footer__column_place_logo footer__column_place_links footer__column_place_contacts"
+      "footer__column_place_logo footer__copyright footer__copyright"
+      ". . ."; 
+    @media screen and (max-width: $width-tab) {
+      grid-template-columns: 1.35fr 0.65fr 1fr;
+      padding-bottom: 50px;
+    }
+    @media screen and (max-width: $width-mob) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 50px 0 20px 0;
+    }
+  }
+  .footer__column_place_logo { grid-area: footer__column_place_logo; }
+  .footer__column_place_links { grid-area: footer__column_place_links; }
+  .footer__column_place_contacts { grid-area: footer__column_place_contacts; }
+  .footer__copyright { grid-area: footer__copyright; }
+
+  &__contacts,
+  &__links {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    @media screen and (max-width: $width-mob) {
+      margin-top: 33px;
+    }
+  }
+
+  &__logo {
+    margin: 0 auto 0 150px;
+    @media screen and (max-width: $width-tab) {
+      width: 200px;
+      margin: 20px auto 100px 50px;
+    }
+    @media screen and (max-width: $width-mob) {
+      width: 200px;
+      margin: 0px auto 8px auto;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    @media screen and (max-width: $width-mob) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-top: 6px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    @media screen and (max-width: $width-tab) {
+      margin-top: 25px;
+    }
+    @media screen and (max-width: $width-mob) {
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+}
