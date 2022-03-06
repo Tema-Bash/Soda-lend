@@ -27,28 +27,35 @@ $color-link: #FFDB00;
     @media screen and (max-width: $width-tab) {
       margin: 0 50px;
     }
-    
     @media screen and (max-width: $width-mob) {
       margin: 0 20px;
     }
+  }
 
-    &_place_bottom {
-      background: #8556F8;
-      display: flex;
-      justify-content: space-between;
+  &__compound {
+    background: url("../../images/about-circle-top.png") top 125px left 625px no-repeat,
+                url("../../images/about-circle-down.png") top 323px left 724px no-repeat,
+                #8556F8;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    @media screen and (max-width: $width-tab) {
+      flex-direction: column;
       position: relative;
-      @media screen and (max-width: $width-tab) {
-        flex-direction: column;
-        position: relative;
-      }
+      background: url("../../images/about-circle-top.png") top 301px left 424px no-repeat,
+                  url("../../images/about-circle-down.png") top 506px left 471px no-repeat,
+                  #8556F8;
     }
+    @media screen and (max-width: $width-mob) {
+      background:#8556F8;
+    }
+  }
 
-    &_place_top {
-      display: flex;
-      justify-content: space-between;
-      @media screen and (max-width: $width-tab) {
-        flex-direction: column;
-      }
+  &__tastes {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $width-tab) {
+      flex-direction: column;
     }
   }
 
